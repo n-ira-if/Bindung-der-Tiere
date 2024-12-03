@@ -1,0 +1,73 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+.site-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #388e3c;
+  padding: 1rem 0;
+}
+
+.site-nav a {
+  color: white;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #c8e6c9;
+}
+
+.content {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.home-section, .about-section, .contact-section, .forum-section, .post-section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #4caf50;
+}
+
+a {
+  color: #388e3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1b5e20;
+}
