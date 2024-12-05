@@ -1,24 +1,13 @@
-# README
+## usersテーブル（ユーザー情報）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|Column            |Type      |Options                      |
+|------------------|----------|-----------------------------|
+|nickname          |string    |null: false                  |
+|email             |string    |null: false, unique: true    |
+|encrypted_password|string    |null: false                  |
+|region_id         |integer   |null: false                  |
+|-----------------------------------------------------------|
+備考
+セキュリティ向上のためnicknameカラム特殊文字制限
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### userテーブルAssociation

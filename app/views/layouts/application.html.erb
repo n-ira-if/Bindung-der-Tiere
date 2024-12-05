@@ -12,16 +12,16 @@
 
   <body>
     <header class="site-header">
-        <h1>ペット情報共有サイト</h1>
+        <h1>Bindung-der-Tiere</h1>
     </header>
     <nav class="site-nav">
-        <a href="/">ホーム</a>
-        <a href="/">ログイン</a>
-        <a href="/">新規登録</a>
+        <%= link_to "ホーム", root_path %>
+        <%= link_to "ログイン", new_user_session_path %>
+        <%= link_to "新規登録", new_user_registration_path %>
     </nav>
     <%= yield %>
     <footer class="site-footer">
-      <p>&copy; 2024 ペット情報共有サイト. All rights reserved.</p>
+      <p>&copy; 2024 Bindung-der-Tiere. All rights reserved.</p>
     </footer>
   </body>
 </html>
