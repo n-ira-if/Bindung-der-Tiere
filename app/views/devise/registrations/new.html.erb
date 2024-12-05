@@ -5,6 +5,7 @@
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
+      <label for="nickname">※特殊文字は使えません、最大8文字です</label><br />
       <%= f.label :nickname %><br />
       <%= f.text_field :nickname, autofocus: true, autocomplete: "nickname" %>
     </div>
