@@ -1,15 +1,8 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #eaeaea;
-  color: #333;
-}
-
+/* ヘッダー */
 .site-header {
   background-color: #4caf50;
   color: white;
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -33,24 +26,40 @@ body {
   color: #c8e6c9;
 }
 
-.content {
-  padding: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+/* ヘッダーここまで */
 
+/* フッター */
 .site-footer {
   background-color: #4caf50;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.2rem 0;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   bottom: 0;
   width: 100%;
 }
+/* フッターここまで */
 
-.home-section, .about-section, .contact-section, .forum-section, .post-section {
+.content {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #2b302c;
+}
+
+.hello {
+  padding: 1rem; /* 内側の余白 */
+  margin-bottom: 2rem; /* 下の余白 */
+  color: #2b302c; /* テキスト色 */
+  white-space: nowrap; /* 改行を防ぐ */
+  right: 0; /* 右側に配置 */
+  max-width: 50%; /* 最大幅を設定 */
+  text-align: left; /* テキストを右揃え */
+}
+
+.content-section {
   background: white;
   padding: 2rem;
   margin-bottom: 2rem;

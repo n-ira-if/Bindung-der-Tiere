@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <body>
     <main class="content">
+        <% if user_signed_in? %>
+          <div class="hello"> <p> ようこそ、<%= current_user.nickname %> さん！ <%= @random_message %>!</p>
+          </div>
+        <% end %>
         <section class="home-section">
             <h2>ようこそ！</h2>
             <p>このサイトでは、ペットに関する情報を共有できます。飼い主さん同士の交流や、おすすめのペット用品情報などをチェックしてください。</p>
