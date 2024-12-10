@@ -12,8 +12,5 @@ class HomesController < ApplicationController
       @random_message = @messages.sample
     end
   end
-
-  def create
-  end
   
 end
