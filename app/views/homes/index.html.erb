@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <body>
     <main class="content">
+        <% if user_signed_in? %>
+          <div class="hello"> <p> ようこそ、<%= current_user.nickname %> さん！ <%= @random_message %>!</p>
+          </div>
+        <% end %>
         <section class="home-section">
             <h2>ようこそ！</h2>
             <p>このサイトでは、ペットに関する情報を共有できます。飼い主さん同士の交流や、おすすめのペット用品情報などをチェックしてください。</p>
@@ -18,8 +22,8 @@
             <p><a href="#">こちら</a>から交流掲示板にアクセスできます。</p>
         </section>
         <section class="post-section">
-            <h2>情報投稿</h2>
-            <p><a href="#">こちら</a>から情報投稿ページにアクセスできます。</p>
+            <h2>近くのペット関連施設検索</h2>
+            <p><%= link_to "こちら", new_pet_path %>からペットページにアクセスできます（仮置き。</p>
         </section>
     </main>
 </body>
